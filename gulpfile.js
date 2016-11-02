@@ -44,7 +44,7 @@ gulp.task('templates', function() {
 
   gulp.src('./src/*.jade')
     .pipe(jade({
-      pretty: false
+      pretty: true
     }))
     .pipe(gulp.dest('./build/'))
     .pipe(reload({stream: true}));
