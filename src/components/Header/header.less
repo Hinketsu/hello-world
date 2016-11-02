@@ -1,31 +1,51 @@
-body  {
-  padding: 40px;
+.header {
+  background: @opacity_black;
+  padding: 55px 0;
+  position: fixed;
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
+.header-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
 
-/*.logo {
-  width: 300px;
-}*/
+  &__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
 
-header {
+    &:hover {
+      a {
+        color: @blue;
+      }
+    }
 
-  height: 150px;
-  background: @black;
+    a {
+      padding: 5px 15px;
+      color: @white;
+      text-decoration: none;
+      font-size: 14px;
+      display: inline-block;
+      border: 2px solid transparent;
+      transition: all 0.5s ease;
+    }
 
-  /*.navigation {
-    font-size: 12px;
-  }*/
   }
 
+  ._active {
+    a {
+      color: @blue;
+      border: 2px solid @blue;
+    }
+  }
 
-
-
-
-/*.my-flex-container{
-  display: flex;}
-
-  высота 150*/
+}
