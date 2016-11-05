@@ -1,0 +1,49 @@
+.header {
+  background: @opacity_black;
+  padding: 65px 0;
+  position: fixed;
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    a {
+        padding: 5px 15px;
+        color: @white;
+        text-decoration: none;
+        font-size: 14px;
+        display: inline-block;
+        border: 2px solid transparent;
+        transition: all 0.5s ease;
+    }
+
+    &:hover {
+      a {
+        color: @blue;
+      }
+    }
+  }
+
+  ._active {
+    a {
+      color: @blue;
+      border: 2px solid @blue;
+    }
+  }
+}

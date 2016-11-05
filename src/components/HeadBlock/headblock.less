@@ -1,0 +1,32 @@
+.head {
+  min-height: 100vh;
+  background: url('../images/background-head.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 150px;
+  display: flex;
+  width: 100%;
+  min-width: 1200px;
+
+  &__title {
+    min-width: 1200px;
+    width: 1200px;
+    color: @white;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+
+
+
+    span {
+      display: inline-block;
+      background-color: @opacity_black;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      font-weight: lighter;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
