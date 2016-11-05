@@ -1,7 +1,5 @@
 .services {
   background: @blue;
-//  padding-top: 800px;
-  //padding: 65px 0;
   height: 400px;
   width: 100%;
   display: flex;
@@ -9,16 +7,16 @@
 
   .wrapper {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     align-items: center;
   }
 
   &__title {
+    padding-top: 30px;
     text-transform: uppercase;
     font-weight: lighter;
-    font-size: 22px;
-    text-decoration: none;
+    font-size: 28px;
     color: @white;
   }
 }
@@ -30,8 +28,9 @@
   align-items: center;
 
   &__item {
+    padding: 20px;
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 100px;
     }
 
     img {
@@ -43,22 +42,21 @@
 
 .services-stitles {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
+  font-size: 22px;
+  color: @white;
 
   &__item {
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 209px;
     }
 
     a {
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 18px;
-        text-decoration: none;
-        color: @white;
-        padding: 5px 15px;
+        padding: 10px 0;
         display: inline-block;
     }
   }
@@ -69,17 +67,17 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  color: @white;
+  font-size: 12px;
 
   &__item {
-    &:not(:last-child) {
-      margin-right: 20px;
+    &:not(:first-child) {
+      margin-right: 10px;
     }
 
     a {
-        padding: 5px 15px;
+        padding : 10px 0;
         font-weight: lighter;
-        color: @white;
-        font-size: 8px;
         display: inline-block;
     }
   }
