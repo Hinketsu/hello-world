@@ -1,0 +1,47 @@
+.twitter {
+  background: @blue;
+  height: 310px;
+  width: 100%;
+  display: flex;
+  min-width: 1200px;
+
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 32px;
+    color: @white;
+  }
+}
+
+.twitter-img {
+  padding-top: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.twitter-text {
+  color: @white;
+  font-size: 28px;
+  line-height: 2;
+  padding-bottom: 40px;
+
+  &__item {
+    a {
+      display: inline-block;
+      font-weight: lighter;
+    }
+    b {
+      font-weight: bold;
+    }
+  }
+}
